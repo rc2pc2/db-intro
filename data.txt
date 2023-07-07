@@ -1,0 +1,16 @@
+
+Nome della tabella: libri
+
+id                   intero                 MEDIUMINT       UNSIGNED PRIMARY_KEY AUTOINCREMENT
+isbn_13              stringa                VARCHAR(17)     -   NULL UNIQUE
+titolo               stringa                VARCHAR(100)    -   NOT_NULL
+autore               stringa                VARCHAR(255)    -   NULL
+genere               stringa                VARCHAR(50)     -   NULL
+anno_pubblicazione   data                   YEAR            -   NOT_NULL
+numero_edizione      intero                 TINYINT UNSIGNED-   NULL
+prima_copertina      stringa                TEXT                NULL
+quarta_copertina     stringa                TEXT                NULL
+pagine               intero                 SMALLINT            NOT_NULL
+lingua               stringa                VARCHAR(6)          NULL
+sinossi              stringa                TEXT                NULL
+prezzo               float                  FLOAT(6, 2)         NULL
